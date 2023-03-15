@@ -20,7 +20,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	height: 100vh;
 	background-color: rgb(39, 35, 67);
 	color: white;
 	padding: 3em;
@@ -151,12 +150,11 @@ padding: 0.8rem;
 }
 
 .product-form-group{
+	display: flex;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
-	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -191,3 +189,105 @@ form{
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	padding: 2em;
 }
+
+.hidden{
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border: 1px solid grey;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+tbody tr:hover{
+	background-color: #ddd;
+}
+
+
+
+table, th, td {
+	border:1px solid black;
+  }
+
+
+tbody{
+	display: flex;
+	flex-direction: column;
+}
+
+/* make table of equal width */
+
+table {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+/* make table header fixed */
+
+thead, tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+/* make table body scrollable */
+
+tbody {
+	
+	overflow-y: auto;
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	
+}
+
+/* make table header cells same width as table body cells */
+
+thead th {
+	position: sticky;
+	top: 0;
+}
+
+/* make table body cells same width as table header cells */
+
+tbody th, tbody td {
+	width: 100%;
+}
+
+/* make table body cells same height as table header cells */
+
+tbody th, tbody td {
+	height: 100%;
+}
+
+/* make table header cells same height as table body cells */
+
+thead th, thead td {
+	height: 100%;
+}
+
+/* make table header cells same height as table body cells */
+
+thead th, thead td {
+	height: 100%;
+}
+
